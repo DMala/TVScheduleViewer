@@ -92,7 +92,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="TV Listings" id="gNy-j7-MJK">
-                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="XXu-vH-1qN">
+                        <barButtonItem key="rightBarButtonItem" image="Calendar" id="XXu-vH-1qN">
                             <connections>
                                 <segue destination="wDN-fs-tvu" kind="popoverPresentation" identifier="SetDate" popoverAnchorBarButtonItem="XXu-vH-1qN" id="CcN-R2-xse">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -211,20 +211,29 @@
                                 </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/25/2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBU-GO-duW">
-                                <rect key="frame" x="100" y="164" width="175" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="100" y="164" width="175" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjS-we-WRF">
+                                <rect key="frame" x="138" y="413" width="99" height="30"/>
+                                <state key="normal" title="Reset to today"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="0Hj-h4-1FE" eventType="touchUpInside" id="ItJ-AZ-ahu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nDA-os-tb5" firstAttribute="trailing" secondItem="cNu-gp-g3c" secondAttribute="trailing" id="9YP-dF-Jx0"/>
+                            <constraint firstItem="wjS-we-WRF" firstAttribute="centerX" secondItem="oZF-0Y-Egw" secondAttribute="centerX" id="KTe-z9-qPr"/>
                             <constraint firstItem="nDA-os-tb5" firstAttribute="leading" secondItem="cNu-gp-g3c" secondAttribute="leading" id="LI2-Mg-CMU"/>
                             <constraint firstItem="cNu-gp-g3c" firstAttribute="trailing" secondItem="HBU-GO-duW" secondAttribute="trailing" constant="100" id="LqL-4t-NXg"/>
                             <constraint firstItem="HBU-GO-duW" firstAttribute="top" secondItem="cNu-gp-g3c" secondAttribute="top" constant="100" id="ZP0-i8-dCZ"/>
                             <constraint firstItem="cNu-gp-g3c" firstAttribute="bottom" secondItem="nDA-os-tb5" secondAttribute="bottom" id="k3c-fj-S2L"/>
                             <constraint firstItem="HBU-GO-duW" firstAttribute="leading" secondItem="cNu-gp-g3c" secondAttribute="leading" constant="100" id="uaz-Re-20v"/>
+                            <constraint firstItem="nDA-os-tb5" firstAttribute="top" secondItem="wjS-we-WRF" secondAttribute="bottom" constant="8" id="wXw-Qb-T9w"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cNu-gp-g3c"/>
                     </view>
@@ -288,4 +297,7 @@
             <point key="canvasLocation" x="496" y="-594.60269865067471"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Calendar" width="25" height="25"/>
+    </resources>
 </document>

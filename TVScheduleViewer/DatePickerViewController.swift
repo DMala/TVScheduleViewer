@@ -34,12 +34,20 @@ class DatePickerViewController: UIViewController {
     // MARK: - Actions
     @IBAction func datePickerAction(_ sender: Any) {
         // Update the label displaying the string
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd/yyyy"
-        self.selectedDate.text = dateFormatter.string(from: datePicker.date)
+        updateSelectedDate(newdate: datePicker.date)
         
         // Also store the selected date
         date = datePicker.date
+    }
+    
+    @IBAction func buttonAction(_ sender: UIButton) {
+        // Reset the picker and display to today's date
+        let currDate = Date()
+        datePicker.date = currDate
+        
+        updateSelectedDate(newdate: currDate)
+        
+        date = currDate
     }
     
     // MARK: - Navigation
@@ -47,12 +55,10 @@ class DatePickerViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        super.prepare(for: segue, sender: sender)
-//        
-//        guard let button = sender as? UIBarButtonItem, button === doneButton else {
-//            print("Hi!")
-//            return
-//        }
-//    }
+    // MARK: - Private functions
+    func updateSelectedDate(newdate: Date) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        selectedDate.text = dateFormatter.string(from: newdate)
+    }
 }

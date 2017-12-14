@@ -110,8 +110,35 @@ class TVListingTableViewController: UITableViewController, TVListingDelegate {
         
         // Update the title string here with the new date
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM/dd/yyyy"
-        self.title = "Listings for " + formatter.string(from: tvListing.date)
+        formatter.dateFormat = "MM/dd"
+        
+        let myCalendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
+        let myComponents = myCalendar.components(.weekday, from: tvListing.date)
+        
+        var day = ""
+        if let weekDay = myComponents.weekday
+        {
+            switch weekDay {
+            case 1:
+                day = "Sun."
+            case 2:
+                day = "Mon."
+            case 3:
+                day = "Tues."
+            case 4:
+                day = "Wed."
+            case 5:
+                day = "Thurs."
+            case 6:
+                day = "Fri."
+            case 7:
+                day = "Sat."
+            default:
+                day = ""
+            }
+        }
+        
+        self.title = day + " " + formatter.string(from: tvListing.date)
     }
     
     // MARK: - Navigation
