@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B31AD921FE2EA9F008C4827 /* TVListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B31AD911FE2EA9F008C4827 /* TVListing.swift */; };
+		7B86F37E1FE205F3007EDEED /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B86F37D1FE205F3007EDEED /* DatePickerViewController.swift */; };
 		7BC4E8451FE03AEC00934C72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4E8441FE03AEC00934C72 /* AppDelegate.swift */; };
-		7BC4E8471FE03AEC00934C72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4E8461FE03AEC00934C72 /* ViewController.swift */; };
+		7BC4E8471FE03AEC00934C72 /* TVListingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4E8461FE03AEC00934C72 /* TVListingDetailViewController.swift */; };
 		7BC4E84A1FE03AEC00934C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4E8481FE03AEC00934C72 /* Main.storyboard */; };
 		7BC4E84C1FE03AEC00934C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4E84B1FE03AEC00934C72 /* Assets.xcassets */; };
 		7BC4E84F1FE03AEC00934C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4E84D1FE03AEC00934C72 /* LaunchScreen.storyboard */; };
 		7BC4E85A1FE03AED00934C72 /* TVScheduleViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4E8591FE03AED00934C72 /* TVScheduleViewerTests.swift */; };
 		7BC4E8651FE03AED00934C72 /* TVScheduleViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4E8641FE03AED00934C72 /* TVScheduleViewerUITests.swift */; };
+		7BC4E8731FE08B0B00934C72 /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4E8721FE08B0B00934C72 /* TVShow.swift */; };
+		7BC4E8751FE09B6C00934C72 /* TVListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4E8741FE09B6C00934C72 /* TVListingTableViewCell.swift */; };
+		7BC4E8771FE0A23600934C72 /* TVListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4E8761FE0A23600934C72 /* TVListingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B31AD911FE2EA9F008C4827 /* TVListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListing.swift; sourceTree = "<group>"; };
+		7B86F37D1FE205F3007EDEED /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		7BC4E8411FE03AEC00934C72 /* TVScheduleViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVScheduleViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC4E8441FE03AEC00934C72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BC4E8461FE03AEC00934C72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BC4E8461FE03AEC00934C72 /* TVListingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListingDetailViewController.swift; sourceTree = "<group>"; };
 		7BC4E8491FE03AEC00934C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BC4E84B1FE03AEC00934C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC4E84E1FE03AEC00934C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		7BC4E8601FE03AED00934C72 /* TVScheduleViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVScheduleViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC4E8641FE03AED00934C72 /* TVScheduleViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVScheduleViewerUITests.swift; sourceTree = "<group>"; };
 		7BC4E8661FE03AED00934C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC4E8721FE08B0B00934C72 /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
+		7BC4E8741FE09B6C00934C72 /* TVListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListingTableViewCell.swift; sourceTree = "<group>"; };
+		7BC4E8761FE0A23600934C72 /* TVListingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				7BC4E8441FE03AEC00934C72 /* AppDelegate.swift */,
-				7BC4E8461FE03AEC00934C72 /* ViewController.swift */,
+				7BC4E8461FE03AEC00934C72 /* TVListingDetailViewController.swift */,
+				7BC4E8741FE09B6C00934C72 /* TVListingTableViewCell.swift */,
+				7BC4E8761FE0A23600934C72 /* TVListingTableViewController.swift */,
+				7BC4E8721FE08B0B00934C72 /* TVShow.swift */,
+				7B31AD911FE2EA9F008C4827 /* TVListing.swift */,
+				7B86F37D1FE205F3007EDEED /* DatePickerViewController.swift */,
 				7BC4E8481FE03AEC00934C72 /* Main.storyboard */,
 				7BC4E84B1FE03AEC00934C72 /* Assets.xcassets */,
 				7BC4E84D1FE03AEC00934C72 /* LaunchScreen.storyboard */,
@@ -259,8 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC4E8471FE03AEC00934C72 /* ViewController.swift in Sources */,
+				7BC4E8471FE03AEC00934C72 /* TVListingDetailViewController.swift in Sources */,
+				7BC4E8731FE08B0B00934C72 /* TVShow.swift in Sources */,
+				7B86F37E1FE205F3007EDEED /* DatePickerViewController.swift in Sources */,
+				7BC4E8751FE09B6C00934C72 /* TVListingTableViewCell.swift in Sources */,
 				7BC4E8451FE03AEC00934C72 /* AppDelegate.swift in Sources */,
+				7BC4E8771FE0A23600934C72 /* TVListingTableViewController.swift in Sources */,
+				7B31AD921FE2EA9F008C4827 /* TVListing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

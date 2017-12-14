@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TVScheduleViewer
 //
-//  Created by Wendy-Anne Malaguti on 12/12/17.
+//  Created by David Malaguti on 12/12/17.
 //  Copyright © 2017 Watch City Software. All rights reserved.
 //
 
