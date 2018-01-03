@@ -47,7 +47,7 @@ class TVListing {
     
     private func updateListings (data: Data)
     {
-        let json = try! JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]]
+        let json = try? JSONSerialization.jsonObject(with: data, options: []) as! [[String: Any]]
         
         if let parseJSON = json {
             // Clear the existing list of shows
